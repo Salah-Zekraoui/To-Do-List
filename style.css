@@ -116,3 +116,33 @@ li:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(229, 62, 62, 0.4);
 }
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Very small screens - stack input and button */
+@media (max-width: 380px) {
+    .input-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    button {
+        width: 100%;
+        min-width: auto;
+    }
+}
