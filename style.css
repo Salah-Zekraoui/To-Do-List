@@ -110,6 +110,8 @@ li:hover {
     box-shadow: 0 2px 8px rgba(229, 62, 62, 0.3);
     transition: all 0.3s ease;
     min-width: 70px;
+    max-width: 70px;
+    flex-shrink: 0;
 }
 
 .delete-btn:hover {
@@ -120,13 +122,13 @@ li:hover {
 /* Mobile responsive design */
 @media (max-width: 480px) {
     body {
-        padding: 10px;
+        padding: 5px;
     }
     
     .container {
         max-width: 100%;
-        margin: 20px auto;
-        padding: 20px;
+        margin: 10px auto;
+        padding: 15px;
     }
     
     h1 {
@@ -146,17 +148,5 @@ li:hover {
         min-width: auto;
     }
     
-    /* Stack todo items and delete buttons */
-    li {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        padding: 15px;
-    }
-    
-    .delete-btn {
-        width: 100%;
-        margin-left: 0;
-        padding: 10px;
-    }
+
 }
